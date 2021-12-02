@@ -3,8 +3,10 @@ import Image from 'next/image'
 import tw from 'tailwind-styled-components'
 import Nav from './components/Nav'
 
+
 export default function Home() {
   return (
+    
     <Wrapper>
       <Nav />
       <div>Top Nav</div>
