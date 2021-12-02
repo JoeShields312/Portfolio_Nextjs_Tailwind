@@ -16,6 +16,7 @@ import {
 	XIcon
 } from '@heroicons/react/outline';
 import tw from 'tailwind-styled-components';
+import Hero from '././Hero'
 
 library.add(fab);
 
@@ -29,7 +30,7 @@ const navigation = [
 	{ name: 'Resume', href: '#', children: [] }
 ];
 const sidebarNavigation = [
-	{ name: 'Open', href: '#', icon: InboxIcon, current: true },
+	{ name: 'Open', href: '#', icon: InboxIcon, current: false },
 	{ name: 'Customers', href: '#', icon: UserCircleIcon, current: false },
 	{ name: 'Flagged', href: '#', icon: FlagIcon, current: false },
 	{ name: 'Drafts', href: '#', icon: PencilAltIcon, current: false }
@@ -227,7 +228,7 @@ export default function Nav() {
 				</header>
 
 				{/* Bottom section */}
-				<div className='min-h-0 flex-1 flex overflow-hidden'>
+				<div className='flex-1 flex overflow-hidden'>
 					{/* Narrow sidebar*/}
 					<nav
 						aria-label='Sidebar'
@@ -251,26 +252,9 @@ export default function Nav() {
 							))}
 						</div>
 					</nav>
-
 					{/* Main area */}
-					<main className='min-w-0 flex-1 border-t border-gray-200 lg:flex'>
-						{/* Primary column */}
-						<section
-							aria-labelledby='primary-heading'
-							className='min-w-0 flex-1 h-full flex flex-col overflow-y-auto lg:order-last'
-						>
-							<h1 id='primary-heading' className='sr-only'>
-								Home
-							</h1>
-						</section>
-
-						{/* Secondary column (hidden on smaller screens) */}
-						<aside className='hidden lg:block lg:flex-shrink-0 lg:order-first'>
-							<div className='h-full relative flex flex-col w-96 border-r border-gray-200 bg-gray-100 overflow-y-auto'>
-								<FontAwesomeIcon icon={['fab', 'github']} />
-							</div>
-						</aside>
-					</main>
+                    <div className='w-full'><Hero /></div>
+					{/* <FontAwesomeIcon icon={['fab', 'github']} /> */}
 				</div>
 			</div>
 		</>
