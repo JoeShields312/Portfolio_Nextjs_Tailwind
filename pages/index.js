@@ -4,18 +4,18 @@ import tw from 'tailwind-styled-components'
 import Nav from './components/Nav'
 
 
+
 export default function Home() {
   return (
     
     <Wrapper>
-      <Nav />
-      <div>Top Nav</div>
-      <div>Side Nav</div>
+      <Nav>
       <div>Bio</div>
       <div>Technology and Languages Used </div>
       <div>Projects</div>
       <div>Contact Info</div>
       <div>Footer</div>
+      </Nav>
     </Wrapper>
   )
 }
