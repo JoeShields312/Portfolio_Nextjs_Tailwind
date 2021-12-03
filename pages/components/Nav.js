@@ -7,15 +7,13 @@ import { Dialog, Menu, Transition } from '@headlessui/react';
 import {
 	FlagIcon,
 	MailIcon,
-    TerminalIcon,
+	TerminalIcon,
 	MenuIcon,
-	PencilAltIcon,
-	UserCircleIcon,
 	XIcon,
-    BriefcaseIcon
+	BriefcaseIcon
 } from '@heroicons/react/outline';
 import tw from 'tailwind-styled-components';
-import Hero from '././Hero'
+import Bio from './Bio';
 
 library.add(fab);
 
@@ -27,11 +25,11 @@ const user = {
 const navigation = [
 	{ name: 'Projects', href: '#', children: [] },
 	{ name: 'Languages & Tools', href: '#', children: [] },
-    { name: 'Contact', href: '#', children: [] }
+	{ name: 'Contact', href: '#', children: [] }
 ];
 const sidebarNavigation = [
-    { name: 'Projects', href: '#', icon: BriefcaseIcon, current: false },
-    { name: 'Languages & Tools', href: '#', icon: TerminalIcon, current: false },
+	{ name: 'Projects', href: '#', icon: BriefcaseIcon, current: false },
+	{ name: 'Languages & Tools', href: '#', icon: TerminalIcon, current: false },
 	{ name: 'Contact', href: '#', icon: MailIcon, current: false }
 ];
 
@@ -52,13 +50,13 @@ export default function Nav() {
         <body class="h-full overflow-hidden">
         ```
       */}
-			<div className='h-full flex flex-col'>
+			<div className='h-full flex flex-col overflow-scroll'>
 				{/* Top nav*/}
-				<header className='flex-shrink-0 relative h-16 bg-white flex items-center'>
+				<header className='flex-shrink-0 relative h-16 bg-gray-800 flex items-center'>
 					{/* Logo area */}
 					<div className='absolute inset-y-0 left-0 md:static md:flex-shrink-0'>
 						<a
-							href='#'
+							href='./'
 							className='flex items-center justify-center h-16 w-16 bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-600 md:w-20'
 						>
 							<img
@@ -102,12 +100,11 @@ export default function Nav() {
 							<nav aria-label='Global' className='flex space-x-10'></nav>
 							<div className='flex items-center space-x-8'>
 								<Menu as='div' className='relative inline-block text-left'>
-										<img
-											className='h-12 w-12 rounded-full'
-											src={user.imageUrl}
-											alt=''
-										/>
-									
+									<img
+										className='h-12 w-12 rounded-full'
+										src={user.imageUrl}
+										alt=''
+									/>
 
 									<Transition
 										as={Fragment}
@@ -118,17 +115,12 @@ export default function Nav() {
 										leaveFrom='transform opacity-100 scale-100'
 										leaveTo='transform opacity-0 scale-95'
 									>
-										<Menu.Items className='origin-top-right absolute z-30 right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none'>
-										</Menu.Items>
+										<Menu.Items className='origin-top-right absolute z-30 right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none'></Menu.Items>
 									</Transition>
 								</Menu>
 							</div>
 						</div>
 					</div>
-
-
-
-
 
 					{/* Mobile menu, show/hide this `div` based on menu open/closed state */}
 					<Transition.Root show={mobileMenuOpen} as={Fragment}>
@@ -163,7 +155,7 @@ export default function Nav() {
 									aria-label='Global'
 								>
 									<div className='h-16 flex items-center justify-between px-4 sm:px-6'>
-										<a href='#'>
+										<a href='./'>
 											<img
 												className='block h-8 w-auto'
 												src='https://tailwindui.com/img/logos/workflow-mark.svg?color=indigo&shade=500'
@@ -227,7 +219,7 @@ export default function Nav() {
 				</header>
 
 				{/* Bottom section */}
-				<div className='flex-1 flex overflow-hidden'>
+				<div className='flex-1 flex overflow-visible'>
 					{/* Narrow sidebar*/}
 					<nav
 						aria-label='Sidebar'
@@ -252,7 +244,9 @@ export default function Nav() {
 						</div>
 					</nav>
 					{/* Main area */}
-                    <div className='w-full'><Hero /></div>
+					<div className='w-full h-full'>
+						<Bio />
+					</div>
 					{/* <FontAwesomeIcon icon={['fab', 'github']} /> */}
 				</div>
 			</div>
