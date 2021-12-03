@@ -100,12 +100,6 @@ export default function Nav() {
 							<nav aria-label='Global' className='flex space-x-10'></nav>
 							<div className='flex items-center space-x-8'>
 								<Menu as='div' className='relative inline-block text-left'>
-									<img
-										className='h-12 w-12 rounded-full'
-										src={user.imageUrl}
-										alt=''
-									/>
-
 									<Transition
 										as={Fragment}
 										enter='transition ease-out duration-100'
@@ -194,23 +188,7 @@ export default function Nav() {
 										))}
 									</div>
 									<div className='border-t border-gray-200 pt-4 pb-3'>
-										<div className='max-w-8xl mx-auto px-4 flex items-center sm:px-6'>
-											<div className='flex-shrink-0'>
-												<img
-													className='h-10 w-10 rounded-full'
-													src={user.imageUrl}
-													alt=''
-												/>
-											</div>
-											<div className='ml-3 min-w-0 flex-1'>
-												<div className='text-base font-medium text-gray-800 truncate'>
-													{user.name}
-												</div>
-												<div className='text-sm font-medium text-gray-500 truncate'>
-													{user.email}
-												</div>
-											</div>
-										</div>
+								
 									</div>
 								</nav>
 							</Transition.Child>
