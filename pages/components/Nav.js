@@ -5,15 +5,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Fragment, useState } from 'react';
 import { Dialog, Menu, Transition } from '@headlessui/react';
 import {
-	ArchiveIcon,
-	BanIcon,
-	BellIcon,
 	FlagIcon,
-	InboxIcon,
+	MailIcon,
+    TerminalIcon,
 	MenuIcon,
 	PencilAltIcon,
 	UserCircleIcon,
-	XIcon
+	XIcon,
+    BriefcaseIcon
 } from '@heroicons/react/outline';
 import tw from 'tailwind-styled-components';
 import Hero from '././Hero'
@@ -26,14 +25,14 @@ const user = {
 	imageUrl: 'https://drive.google.com/uc?id=1sQIuxYprbofLN__tpEBbR7urzJFVBRj6'
 };
 const navigation = [
-	{ name: 'Contact', href: '#', children: [] },
-	{ name: 'Resume', href: '#', children: [] }
+	{ name: 'Projects', href: '#', children: [] },
+	{ name: 'Languages & Tools', href: '#', children: [] },
+    { name: 'Contact', href: '#', children: [] }
 ];
 const sidebarNavigation = [
-	{ name: 'Open', href: '#', icon: InboxIcon, current: false },
-	{ name: 'Customers', href: '#', icon: UserCircleIcon, current: false },
-	{ name: 'Flagged', href: '#', icon: FlagIcon, current: false },
-	{ name: 'Drafts', href: '#', icon: PencilAltIcon, current: false }
+    { name: 'Projects', href: '#', icon: BriefcaseIcon, current: false },
+    { name: 'Languages & Tools', href: '#', icon: TerminalIcon, current: false },
+	{ name: 'Contact', href: '#', icon: MailIcon, current: false }
 ];
 
 function classNames(...classes) {
