@@ -5,15 +5,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Fragment, useState } from 'react';
 import { Dialog, Menu, Transition } from '@headlessui/react';
 import {
-	FlagIcon,
 	MailIcon,
 	TerminalIcon,
 	MenuIcon,
 	XIcon,
-	BriefcaseIcon
+	BriefcaseIcon,
+	DesktopComputerIcon
 } from '@heroicons/react/outline';
 import tw from 'tailwind-styled-components';
 import Bio from './Bio';
+import Footer from './Footer'
 
 library.add(fab);
 
@@ -28,7 +29,7 @@ const navigation = [
 	{ name: 'Contact', href: '#', children: [] }
 ];
 const sidebarNavigation = [
-	{ name: 'Projects', href: '#', icon: BriefcaseIcon, current: false },
+	{ name: 'Projects', href: '#', icon: DesktopComputerIcon, current: false },
 	{ name: 'Languages & Tools', href: '#', icon: TerminalIcon, current: false },
 	{ name: 'Contact', href: '#', icon: MailIcon, current: false }
 ];
@@ -50,7 +51,7 @@ export default function Nav() {
         <body class="h-full overflow-hidden">
         ```
       */}
-			<div className='h-full flex flex-col overflow-scroll'>
+			<div className='h-full flex flex-col overflow-hidden'>
 				{/* Top nav*/}
 				<header className='flex-shrink-0 relative h-16 bg-gray-800 flex items-center'>
 					{/* Logo area */}
@@ -66,16 +67,6 @@ export default function Nav() {
 							/>
 						</a>
 					</div>
-
-					{/* Picker area */}
-					<div className='mx-auto md:hidden'>
-						<div className='relative'>
-							<label htmlFor='inbox-select' className='sr-only'>
-								Choose inbox
-							</label>
-						</div>
-					</div>
-
 					{/* Menu button area */}
 					<div className='absolute inset-y-0 right-0 pr-4 flex items-center sm:pr-6 md:hidden'>
 						{/* Mobile menu button */}
@@ -197,7 +188,7 @@ export default function Nav() {
 				</header>
 
 				{/* Bottom section */}
-				<div className='flex-1 flex overflow-visible'>
+				<div className='flex-1 flex overflow-y-auto'>
 					{/* Narrow sidebar*/}
 					<nav
 						aria-label='Sidebar'
@@ -222,12 +213,14 @@ export default function Nav() {
 						</div>
 					</nav>
 					{/* Main area */}
-					<div className='w-full h-full'>
+					<div className='w-full h-full overflow-auto'>
 						<Bio />
 					</div>
 					{/* <FontAwesomeIcon icon={['fab', 'github']} /> */}
+					
 				</div>
 			</div>
+		<Footer />
 		</>
 	);
 }
