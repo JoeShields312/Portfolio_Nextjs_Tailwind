@@ -10,9 +10,11 @@ import {
 	MenuIcon,
 	XIcon,
 	BriefcaseIcon,
-	DesktopComputerIcon
+	HomeIcon
 } from '@heroicons/react/outline';
 import tw from 'tailwind-styled-components';
+import Bio from './Bio';
+import LanguagesKnown from './LanguagesKnown';
 import FeatureProjects from './FeatureProjects';
 import Link from 'next/link';
 import { Route, Switch } from 'react-router';
@@ -33,12 +35,14 @@ const user = {
 	imageUrl: 'https://drive.google.com/uc?id=1sQIuxYprbofLN__tpEBbR7urzJFVBRj6'
 };
 const navigation = [
+	{ name: 'Home', href: '/', children: [] },
 	{ name: 'Projects', href: '/projects', children: [] },
 	{ name: 'Languages & Tools', href: '/languages', children: [] },
 	{ name: 'Contact', href: 'mailto:shields.john.joseph@gmail.com', children: [] }
 ];
 const sidebarNavigation = [
-	{ name: 'Projects', href: '/projects', icon: DesktopComputerIcon, current: false },
+	{ name: 'Home', href: '/', icon: HomeIcon, current: false },
+	{ name: 'Projects', href: '/projects', icon: BriefcaseIcon, current: false },
 	{ name: 'Languages & Tools', href: 'languages', icon: TerminalIcon, current: false },
 	{ name: 'Contact', href: 'mailto:shields.john.joseph@gmail.com', icon: MailIcon, current: false }
 ];
