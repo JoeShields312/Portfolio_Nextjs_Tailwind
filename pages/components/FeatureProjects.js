@@ -1,5 +1,6 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { InboxIcon, SparklesIcon } from '@heroicons/react/outline'
+import tw from 'tailwind-styled-components';
 
 export default function FeatureProjects() {
   return (
