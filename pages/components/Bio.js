@@ -4,6 +4,7 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import Link from 'next/link';
 import tw from 'tailwind-styled-components';
 
+
 const navigation = [
 	{ name: 'Projects', href: '/projects.js'},
 	{ name: 'Languages & Tools', href: '#'},
@@ -28,10 +29,10 @@ export default function Bio() {
             <div className="sm:text-center lg:text-left">
               <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
                 <span className="block xl:inline">Joe Shields</span>{' '}
-                <span className="block text-indigo-600 xl:inline">Full-Stack-Developer</span>
+                <span className="block text-indigo-600 xl:inline">Full-Stack-Engineer</span>
               </h1>
-              <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-lg lg:mx-0">
-              Developer skilled in both back-end and front-end, with particular interest in design and UX-UI experience. My career as a director of market research inspired me to pursue my true passion of creating web applications. I love being creative and unique, but I also appreciate the technical challenges of back-end development. When programming I follow structure and order, since this is essential when creating quality web applications. I enjoy debugging and critiquing small details, as well as optimizing applications. Working in a team setting is ideal, because more knowledge is obtained and retained between developers. In the next phase of my career, I want to continue to be challenged and tested as a means to maintain growth as a developer. In my off time I enjoy going to sporting and music events, drone piloting, fishing, cycling, and weight lifting. My past times, and my canine companions Belle and Scout keep me active between going on walks and frequenting the dog park. They even try their paws in development by nudging me as a reminder to take a step back and clear my head to remain effective.
+              <p className="break-words mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-lg lg:mx-0">
+              Full-Stack Engineer with particular interest in design and UX-UI experience. My position as a director of market research for 5+ years, inspired me to pursue my true passion of creating web applications. I love being creative and unique, but I also appreciate technical challenges. When programming I enjoy critiquing small details, optimizing for speed, and increasing searchbility. In the next phase of my career, I want to continue to be challenged and tested as a means to maintain growth as an engineer. In my off time I enjoy going to sporting and music events, drone piloting, fishing, cycling, weight lifting, and spending time with my family and friends. My past times, and my canine companions Belle and Scout keep me active between going on walks and frequenting the dog park. They even try their paws in development by nudging me as a reminder to take a step back and clear my head to remain effective.
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
