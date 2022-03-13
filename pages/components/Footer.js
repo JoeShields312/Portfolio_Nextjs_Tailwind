@@ -29,8 +29,23 @@ const navigation = [
         </svg>
       ),
     },
+    {
+      name: 'LinkedIn',
+      href: 'https://www.linkedin.com/in/jshields90/',
+      icon: (props) => (
+        <svg fill="currentColor" viewBox="0 0 24 24">    
+        <path 
+        fillRule="evenodd"
+        d=""
+        clipRule="evenodd"
+        />
+          </svg>
+      ),
+    }
    
   ]
+
+  
   
   export default function Footer() {
     return (
@@ -45,7 +60,7 @@ const navigation = [
             ))}
           </div>
           <div className="mt-8 md:mt-0 md:order-1">
-            <p className="text-center text-base text-gray-400 mb-1">&copy; 2021 Joe Shields <BeakerIcon className='inline h-6 w-6' /></p>
+            <p className="text-center text-base text-gray-400 mb-1">&copy; 2022 Joe Shields <BeakerIcon className='inline h-6 w-6' /></p>
           </div>
         </div>
       </footer>
