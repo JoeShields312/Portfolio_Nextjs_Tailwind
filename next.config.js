@@ -1,7 +1,7 @@
 module.exports = {
   reactStrictMode: true,
   eslint: {
-    ingnoreDuringBuilds: true,
+    ignoreDuringBuilds: true,
   },
   images: {
     domains: ['drive.google.com']
