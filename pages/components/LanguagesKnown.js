@@ -21,7 +21,7 @@ import {
   export default function LanguagesKnown() {
     
     return (
-      <div className="relative bg-white py-12 sm:py-12 lg:py-56 overflow-scroll">
+      <div className="relative bg-white py-12 sm:py-12 lg:py-56">
         <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
           <h2 className="text-base font-semibold tracking-wider text-indigo-600 uppercase">Joe Shields</h2>
           <p className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
