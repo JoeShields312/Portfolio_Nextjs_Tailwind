@@ -3,4 +3,7 @@ module.exports = {
   eslint: {
     ingnoreDuringBuilds: true,
   },
+  images: {
+    domains: ['drive.google.com']
+  },
 }
