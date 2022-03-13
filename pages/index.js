@@ -4,6 +4,7 @@ import tw from 'tailwind-styled-components';
 import NavB from './components/NavB';
 import Footer from './components/Footer'
 import React, { useEffect } from 'react'
+import styled from 'styled-components';
 
 
 
@@ -12,12 +13,19 @@ export default function Home() {
 		<Wrapper>
 			<NavB>
 			</NavB>
-		
 			<Footer />
 		</Wrapper>
 	);
 }
 
-const Wrapper = tw.div`
-flex flex-col text-center h-full overflow-y-auto
+const Wrapper = styled.div`
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    ::-webkit-scrollbar {
+        display: none;
+    }
 `
