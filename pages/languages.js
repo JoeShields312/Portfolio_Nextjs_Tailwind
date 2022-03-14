@@ -24,9 +24,5 @@ const Wrapper = styled.div`
 	flex-direction: column;
 	text-align: center;
 	height: 100%;
-    overflow: hidden;
-    overflow-y: scroll;
-    ::-webkit-scrollbar {
-        display: none;
-    }
+    overflow: scroll;
 `
