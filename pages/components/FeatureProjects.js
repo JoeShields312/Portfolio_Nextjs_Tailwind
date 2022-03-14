@@ -5,7 +5,7 @@ import tw from 'tailwind-styled-components';
 
 export default function FeatureProjects() {
   return (
-    <div className="relative bg-white pt-16 pb-32 overflow-hidden">
+    <div className="relative bg-white pt-16 pb-32 overflow-auto">
 
       <div className="relative">
         <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">

@@ -10,5 +10,5 @@ function MyApp({ Component, pageProps }) {
 export default MyApp
 
 const Component = styled.div`
-    overflow: scroll;
+    overflow: auto;
 `

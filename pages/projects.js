@@ -22,5 +22,5 @@ const Wrapper = styled.div`
 	flex-direction: column;
 	text-align: center;
 	height: 100%;
-    overflow: scroll;
+    overflow: auto;
 `
