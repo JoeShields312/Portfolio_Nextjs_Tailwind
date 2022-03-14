@@ -64,7 +64,7 @@ export default function Nav() {
         <body class="h-full overflow-hidden">
         ```
       */}
-			<div className='h-full flex flex-col overflow-hidden'>
+			<div className='h-full flex flex-col overflow-scroll'>
 				{/* Top nav*/}
 				<header className='flex-shrink-0 relative h-16 bg-gray-800 flex items-center'>
 					{/* Logo area */}
