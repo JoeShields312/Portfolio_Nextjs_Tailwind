@@ -9,10 +9,6 @@ function MyApp({ Component, pageProps }) {
 
 export default MyApp
 
-// const Component = styled.div`
-//     overflow: hidden;
-//     overflow-y: scroll;
-//     ::-webkit-scrollbar {
-//         display: none;
-//     }
-// `
+const Component = styled.div`
+    overflow: scroll;
+`
