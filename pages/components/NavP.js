@@ -10,7 +10,8 @@ import {
 	MenuIcon,
 	XIcon,
 	BriefcaseIcon,
-	HomeIcon
+	HomeIcon,
+	ExternalLinkIcon
 } from '@heroicons/react/outline';
 import tw from 'tailwind-styled-components';
 import Bio from './Bio';
@@ -36,15 +37,16 @@ const user = {
 };
 const navigation = [
 	{ name: 'About', href: '/', children: [] },
-	{ name: 'Projects', href: '/projects', children: [] },
 	{ name: 'Languages & Tools', href: '/languages', children: [] },
-	{ name: 'Contact', href: 'mailto:shields.john.joseph@gmail.com', children: [] }
+	{ name: 'Contact', href: 'mailto:shields.john.joseph@gmail.com', children: [] },
+	{ name: 'LinkedIn', href: 'https://www.linkedin.com/in/jshields90/', children: [] }
 ];
 const sidebarNavigation = [
 	{ name: 'About', href: '/', icon: HomeIcon, current: false },
 	{ name: 'Projects', href: '/projects', icon: BriefcaseIcon, current: false },
 	{ name: 'Languages & Tools', href: 'languages', icon: TerminalIcon, current: false },
-	{ name: 'Contact', href: 'mailto:shields.john.joseph@gmail.com', icon: MailIcon, current: false }
+	{ name: 'Contact', href: 'mailto:shields.john.joseph@gmail.com', icon: MailIcon, current: false },
+	{ name: 'LinkedIn', href: 'https://www.linkedin.com/in/jshields90/', icon: ExternalLinkIcon, current: false }
 ];
 
 function classNames(...classes) {
