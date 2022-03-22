@@ -13,8 +13,8 @@ import {
 
 
   const features = [
-    { name: 'Front-End', icon: DesktopComputerIcon, description: 'HTML\n' + 'CSS\n' + 'JavaScript\n' + 'React\n' + 'Next.js\n' + 'Tailwind\n'},
-    { name: 'Back-End', icon: ServerIcon, description: 'SQL\n' + 'MongoDB\n' + 'Python\n' + 'WPGraphQL\n' + 'GraphQL\n' + 'Firebase\n' + 'Thirdweb\n' + 'Sanity'},
+    { name: 'Front-End', icon: DesktopComputerIcon, description: 'HTML\n' + 'JavaScript\n' + 'CSS\n' + 'TypeScript\n' + 'React\n' + 'Next.js\n' + 'Tailwind\n'},
+    { name: 'Back-End', icon: ServerIcon, description: 'SQL\n' + 'MongoDB\n' + 'Python\n' + 'WPGraphQL\n' + 'GraphQL\n' + 'Firebase\n' + 'ThirdWeb\n' + 'Sanity.io'},
     { name: 'Tools', icon: ChipIcon, description: 'WordPress GitHub GitLab Vercel Apollo Figma' }
   ]
 
