@@ -61,7 +61,7 @@ export default function FeatureProjects() {
                   Uber Blockchain App
                 </h2>
                 <p className="mt-4 text-lg text-gray-500">
-                  A clone version of the Uber App that allows crypto payment. Utilizes Next.js, Ethers.js, Sanity.io, MetaMask, and Tailwind CSS. *Note: You need a MetaMask Wallet to interact with this application.
+                  *Under Construction* A clone version of the Uber App that allows crypto payment. Utilizes Next.js, Ethers.js, Sanity.io, MetaMask, and Tailwind CSS. *Note: You need a MetaMask Wallet to interact with this application.
                 </p>
                 <div className="mt-6">
                   <a
