@@ -32,20 +32,20 @@ library.add(fab);
 
 const user = {
 	name: 'Joe Shields',
-	email: 'Shields.John.Joseph@gmail.com',
+	email: 'joe@windycitydevs.io',
 	imageUrl: 'https://drive.google.com/uc?id=1sQIuxYprbofLN__tpEBbR7urzJFVBRj6'
 };
 const navigation = [
 	{ name: 'About', href: '/', children: [] },
 	{ name: 'Projects', href: '/projects', children: [] },
-	{ name: 'Contact', href: 'mailto:shields.john.joseph@gmail.com', children: [] },
+	{ name: 'Contact', href: 'mailto:joe@windycitydevs.io', children: [] },
 	{ name: 'LinkedIn', href: 'https://www.linkedin.com/in/jshields90/', children: [] }
 ];
 const sidebarNavigation = [
 	{ name: 'About', href: '/', icon: HomeIcon, current: false },
 	{ name: 'Projects', href: '/projects', icon: BriefcaseIcon, current: false },
 	{ name: 'Languages & Tools', href: 'languages', icon: TerminalIcon, current: false },
-	{ name: 'Contact', href: 'mailto:shields.john.joseph@gmail.com', icon: MailIcon, current: false },
+	{ name: 'Contact', href: 'mailto:joe@windycitydevs.io', icon: MailIcon, current: false },
 	{ name: 'LinkedIn', href: 'https://www.linkedin.com/in/jshields90/', icon: ExternalLinkIcon, current: false }
 ];
 

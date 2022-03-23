@@ -7,8 +7,8 @@ import tw from 'tailwind-styled-components';
 
 const navigation = [
 	{ name: 'Projects', href: '/projects.js'},
-	{ name: 'Languages & Tools', href: '#'},
-	{ name: 'Contact', href: 'mailto:shields.john.joseph@gmail.com'}
+	{ name: 'Languages & Tools', href: './LanguagesKnown.js'},
+	{ name: 'Contact', href: 'mailto:joe@windycitydevs.io'}
 ];
 
 export default function Bio() {
@@ -45,7 +45,7 @@ export default function Bio() {
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
                   <a
-                    href='mailto:shields.john.joseph@gmail.com'
+                    href='mailto:joe@windycitydevs.io'
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
                   >
                     Contact Me
