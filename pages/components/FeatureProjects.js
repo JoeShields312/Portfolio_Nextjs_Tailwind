@@ -240,7 +240,7 @@ export default function FeatureProjects() {
             <div className="pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
               <img         
                 className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
-                src="https://drive.google.com/uc?id=18ELJ6Ziu6nDAy7hCbkY-4Mm96Orvl7JJ"
+                src="https://drive.google.com/uc?id=1Xac2x1o7TWblgYXZChzPJjkquCv793dF"
                 alt=""
               />
             </div>
