@@ -262,7 +262,7 @@ export default function FeatureProjects() {
                   Avengers Quiz
                 </h2>
                 <p className="mt-4 text-lg text-gray-500">
-                  A 10 question multiple choice quiz about the Avengers, utilizes Javascript, HTML, and CSS. Note* This is the first website I ever created.
+                  A 10 question multiple choice quiz about the Avengers, utilizes Javascript, HTML, and CSS. Note* This is the first website I created.
                 </p>
                 <div className="mt-6">
                   <a
