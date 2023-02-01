@@ -28,11 +28,18 @@ export default function Bio() {
           <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
             <div className="sm:text-center lg:text-left">
               <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-                <span className="block xl:inline">Joe Shields</span>{' '}
+                <span className="name block xl:inline">Joe Shields</span>{' '}
                 <span className="block text-indigo-600 xl:inline">Full Stack Software Engineer</span>
               </h1>
-              <p className="break-words mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-lg lg:mx-0">
-              Full Stack Software Engineer with particular interest in design and UX-UI experience. My position as a director of market research for 5+ years, inspired me to pursue my true passion of creating web applications. I love being creative and unique, but I also appreciate technical challenges. When programming I enjoy critiquing small details, optimizing for speed, and increasing searchbility. In the next phase of my career, I want to continue to be challenged and tested as a means to maintain growth as an engineer. In my off time I enjoy going to sporting and music events, playing guitar, drone piloting, camping, fishing, cycling, weight lifting, and spending time with my family and friends. My past times, and my canine companions Belle and Scout keep me active between going on walks and frequenting the dog park. They even try their paws in development by nudging me as a reminder to take a step back and clear my head to remain effective.
+              <p className="bio break-words mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-lg lg:mx-0">
+              Full Stack Software Engineer with particular interest in design and UX-UI experience. 
+              My position as a director of market research for 5+ years, inspired me to pursue my true passion of creating web applications.
+              I love being creative and unique, but I also appreciate technical challenges. 
+              When programming I enjoy critiquing small details, optimizing for speed, and increasing searchbility. 
+              In the next phase of my career, I want to continue to be challenged and tested as a means to maintain growth as an engineer. 
+              In my off time I enjoy going to sporting and music events, playing guitar, camping, fishing, cycling, weight lifting, and spending time with my family and friends. 
+              My past times, and my canine companions Belle and Scout keep me active between going on walks and frequenting the dog park. 
+              They even try their paws in development by nudging me as a reminder to take a step back and clear my head to remain effective.
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
