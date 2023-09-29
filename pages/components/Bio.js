@@ -1,76 +1,83 @@
-import { Fragment } from 'react'
-import { Popover, Transition } from '@headlessui/react'
-import { MenuIcon, XIcon } from '@heroicons/react/outline'
+import { Fragment } from 'react';
+import { Popover, Transition } from '@headlessui/react';
+import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import Link from 'next/link';
 import tw from 'tailwind-styled-components';
 
-
 const navigation = [
-	{ name: 'Projects', href: '/projects.js'},
-	{ name: 'Languages & Tools', href: './LanguagesKnown.js'},
-	{ name: 'Contact', href: 'mailto:joe@windycitydevs.io'}
+	{ name: 'Projects', href: '/projects.js' },
+	{ name: 'Languages & Tools', href: './LanguagesKnown.js' },
+	{ name: 'Contact', href: 'mailto:joe@windycitydevs.io' }
 ];
 
 export default function Bio() {
-  return (
-    <div className="relative bg-white overflow-auto">
-      <div className="max-w-7xl mx-auto">
-        <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-          <svg
-            className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
-            fill="currentColor"
-            viewBox="0 0 100 100"
-            preserveAspectRatio="none"
-            aria-hidden="true"
-          >
-            <polygon points="50,0 100,0 50,100 0,100" />
-          </svg>
-          <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
-            <div className="sm:text-center lg:text-left">
-              <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-                <span className="name block xl:inline">Joe Shields</span>{' '}
-                <span className="block text-indigo-600 xl:inline">Full Stack Software Engineer</span>
-              </h1>
-              <p className="bio break-words mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-lg lg:mx-0">
-              Full Stack Software Engineer with particular interest in design and UX-UI experience. 
-              My position as a director of market research for 5+ years, inspired me to pursue my true passion of creating web applications.
-              I love being creative and unique, but I also appreciate technical challenges. 
-              When programming I enjoy critiquing small details, optimizing for speed, and increasing searchbility. 
-              In the next phase of my career, I want to continue to be challenged and tested as a means to maintain growth as an engineer. 
-              In my off time I enjoy going to sporting and music events, playing guitar, camping, fishing, cycling, weight lifting, and spending time with my family and friends. 
-              My past times, and my canine companions Belle and Scout keep me active between going on walks and frequenting the dog park. 
-              They even try their paws in development by nudging me as a reminder to take a step back and clear my head to remain effective.
-              </p>
-              <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                <div className="rounded-md shadow">
-                  <a
-                    href="/projects"
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
-                  >
-                    View Work 
-                  </a>
-                </div>
-                <div className="mt-3 sm:mt-0 sm:ml-3">
-                  <a
-                    href='mailto:joe@windycitydevs.io'
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
-                  >
-                    Contact Me
-                  </a>
-                </div>
-              </div>
-            </div>
-          </main>
-        </div>
-      </div>
-      <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-        <img
-          className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
-          src="https://drive.google.com/uc?id=1gRlNoCGkymujSnMIU-cOo5wdRzO3I5RH"
-          alt=""
-        />
-      </div>
-    </div>
-  )
+	return (
+		<div className='relative bg-white overflow-auto'>
+			<div className='max-w-7xl mx-auto'>
+				<div className='relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32'>
+					<svg
+						className='hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2'
+						fill='currentColor'
+						viewBox='0 0 100 100'
+						preserveAspectRatio='none'
+						aria-hidden='true'
+					>
+						<polygon points='50,0 100,0 50,100 0,100' />
+					</svg>
+					<main className='mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28'>
+						<div className='sm:text-center lg:text-left'>
+							<h1 className='text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl'>
+								<span className='name block xl:inline'>Joe Shields</span>{' '}
+								<span className='block text-indigo-600 xl:inline'>
+									Full Stack Software Engineer
+								</span>
+							</h1>
+							<p className='bio break-words mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-lg lg:mx-0'>
+								Full Stack Engineer with particular interest in design and UX-UI
+								experience. My position as a director of market research for 5+
+								years, inspired me to pursue my true passion of creating web
+								applications. I love being creative and unique, but I also
+								appreciate technical challenges. When programming I enjoy
+								critiquing small details, optimizing for speed, and increasing
+								searchbility. In the next phase of my career, I want to continue
+								to be challenged and tested as a means to maintain growth as an
+								engineer. In my off time I enjoy going to sporting and music
+								events, playing guitar, camping, fishing, cycling, weight
+								lifting, and spending time with my family and friends. My past
+								times, and my canine companions Belle and Scout keep me active
+								between going on walks and frequenting the dog park. They even
+								try their paws in development by nudging me as a reminder to
+								take a step back and clear my head to remain effective.
+							</p>
+							<div className='mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start'>
+								<div className='rounded-md shadow'>
+									<a
+										href='/projects'
+										className='w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10'
+									>
+										View Work
+									</a>
+								</div>
+								<div className='mt-3 sm:mt-0 sm:ml-3'>
+									<a
+										href='mailto:joe@windycitydevs.io'
+										className='w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10'
+									>
+										Contact Me
+									</a>
+								</div>
+							</div>
+						</div>
+					</main>
+				</div>
+			</div>
+			<div className='lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2'>
+				<img
+					className='h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full'
+					src='https://drive.google.com/uc?id=1gRlNoCGkymujSnMIU-cOo5wdRzO3I5RH'
+					alt=''
+				/>
+			</div>
+		</div>
+	);
 }
-
